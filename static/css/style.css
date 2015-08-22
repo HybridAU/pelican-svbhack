@@ -93,6 +93,9 @@ main article div.article_text blockquote {
   color: #999999;
   font-style: italic;
 }
+main article div.article_text img{
+  box-shadow: 1px 1px 4px 2px #F0F0F0
+}
 main article div.gist {
   line-height: .875em;
 }
