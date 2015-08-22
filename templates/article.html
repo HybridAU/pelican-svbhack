@@ -14,7 +14,7 @@
     {{ article.content }}
   </div>
   <div class="article_meta">
-    <p>Posted on: {{ article.locale_date }}</p>
+      <p>Posted on: <abbr title="{{ article.date }}" >{{ article.locale_date }}</abbr></p>
     <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
       {% if article.tags %} &ndash; Tags:
       {% for tag in article.tags %}
