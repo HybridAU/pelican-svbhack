@@ -26,10 +26,7 @@
   {% block head %}
   {% endblock %}
 
-  <title>
-    {{ SITENAME }}
-    {% block title %}{% endblock %}
-  </title>
+  <title>{% block title %}{% endblock %}{{ SITENAME }}</title>
 
   {% include "modules/analytics.html" %}
 </head>
