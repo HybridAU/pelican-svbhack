@@ -9,8 +9,15 @@
   <link rel="shortcut icon" type="image/png" href="{{ SITEURL }}/favicon.png" />
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/load-fonts.css">
-
+  <!--
+  This is almost certainly the wrong way to do this but it's the only way
+  I can find to load the fonts in a subdirectory
+  -->
+  {% if ZERO_NET_SITE %}
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/load-fonts.css">
+  {% else %}
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/load-fonts.css">
+  {% endif %}
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{ AUTHOR }}">
