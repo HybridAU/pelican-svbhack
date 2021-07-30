@@ -74,7 +74,6 @@ main article div.article_text code {
   color: #000000;
   font-size: 14px;
   font-family: 'PT Mono', monospace;
-  background: #eeeeee;
 }
 main article div.article_text pre {
   margin: 22px 2px 22px 2px;
@@ -82,7 +81,7 @@ main article div.article_text pre {
   border-left: 3px solid #0e94ec;
   font-size: 14px;
   font-family: 'PT Mono', monospace;
-  background: #00243C;
+  background: #205b83;
   line-height: 1.125em;
   overflow-x: auto;
 }
