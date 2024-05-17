@@ -8,13 +8,20 @@
 {% block content %}
 <article>
   <div class="article_title">
-    <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+    <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   </div>
+  <div class="article_meta">
+    <p>Posted on: {{ article.locale_date }}</p>
+  </div>
+  {% if article.readtime %}
+  <div class="article_readtime">
+    <p>Estimated read time: {{article.readtime.minutes}} minutes</p>
+  </div>
+  {% endif %}
   <div class="article_text">
     {{ article.content }}
   </div>
   <div class="article_meta">
-      <p>Posted on: <abbr title="{{ article.date }}" >{{ article.locale_date }}</abbr></p>
     <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
       {% if article.tags %} &ndash; Tags:
       {% for tag in article.tags %}
