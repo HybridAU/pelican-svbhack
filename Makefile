@@ -6,7 +6,7 @@
 # 'default', 'murphy', 'vs', 'trac', 'tango', 'fruity', 'autumn', 'bw', 'emacs',
 # 'vim', 'pastie', 'friendly', 'native']
 
-STYLE = native
+STYLE = default
 
 pygments:
 	pygmentize -S ${STYLE} -f html > ./static/css/pygments.css
